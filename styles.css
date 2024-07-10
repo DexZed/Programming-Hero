@@ -87,6 +87,7 @@
   color: #fff;
   padding: 21px 24px;
   font: 600 20px Azeret Mono, sans-serif;
+  text-decoration: none;
 }
 
 @media (max-width: 991px) {
