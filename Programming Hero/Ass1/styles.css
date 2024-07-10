@@ -1,0 +1,129 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    color: #0d1321;
+}
+
+.header-wrapper {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.hero-title {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+    font: 800 28px Azeret Mono, sans-serif;
+}
+
+.resume-button {
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #0d1321;
+    text-align: center;
+    padding: 17px 24px;
+    font: 600 20px Azeret Mono, sans-serif;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    position: relative;
+    min-height: 652px;
+    margin-top: 36px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 26px 80px 45px;
+    
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-avatar {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 240px;
+    max-width: 100%;
+}
+
+.hero-quote {
+    position: relative;
+    margin-top: 32px;
+    width: 998px;
+    font: 800 48px/68px Azeret Mono, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.hero-description {
+    position: relative;
+    margin-top: 24px;
+    width: 852px;
+    font: 400 16px/26px Azeret Mono, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.contact-button {
+    position: relative;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #0d1321;
+    margin-top: 32px;
+    color: #fff;
+    padding: 21px 24px;
+    font: 600 20px Azeret Mono, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .header-wrapper {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .resume-button {
+        padding: 17px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 26px 20px 45px;
+    }
+
+    .hero-quote {
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 63px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .contact-button {
+        padding: 21px 20px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
