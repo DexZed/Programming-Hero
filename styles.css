@@ -8,7 +8,7 @@
   align-self: center;
   display: flex;
   width: 100%;
-  max-width: 1140x;
+  max-width: 1140px;
   gap: 20px;
   padding: 0 20px;
 }
@@ -41,7 +41,7 @@
   width: 100%;
   align-items: center;
   text-align: center;
-  padding: 26px 80px 45px;
+  padding:  80px 45px;
 
 }
 
@@ -52,6 +52,7 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+  translate: -5%;
 }
 
 .hero-avatar {
@@ -147,6 +148,9 @@
 }
 
 .section-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #0d1321;
   text-align: center;
   margin-top: 24px;
@@ -312,14 +316,7 @@
   font: 800 32px Azeret Mono, sans-serif;
 }
 
-.section-description {
-  align-self: center;
-  color: #0d1321;
-  text-align: center;
-  margin-top: 24px;
-  max-width: 852px;
-  font: 400 16px/26px Azeret Mono, -apple-system, Roboto, Helvetica, sans-serif;
-}
+
 
 .card-container {
   margin-top: 48px;
@@ -341,6 +338,7 @@
   color: #0d1321;
   width: 100%;
   padding: 40px;
+  translate: -5%;
 }
 
 .card-icon {
@@ -393,7 +391,8 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  
+  
   margin-top: 24px;
 }
 
@@ -401,6 +400,8 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .target-icon {
@@ -409,6 +410,7 @@
   object-position: center;
   width: 95px;
   margin: auto 0;
+  translate: 15%;
 }
 
 .target-details {
@@ -544,6 +546,7 @@
   margin-top: 80px;
   width: 100%;
   padding: 32px 60px;
+  translate: -4%;
 }
 
 .commitment-wrapper {
@@ -639,4 +642,7 @@
 
 html {
   scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
 }
